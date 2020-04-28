@@ -1,7 +1,7 @@
 <template>
 	<v-app>
 		<v-app-bar app color="primary" dark>
-			<v-toolbar-title class="headline pointer mr-3 hidden-sm-and-down">
+			<v-toolbar-title class="headline pointer mr-3">
 				<router-link
 					:to="{ path: '/', query: { rootId: $route.query.rootId } }"
 					tag="span"
@@ -32,7 +32,7 @@
 			</v-toolbar-items>
 			<portal-target name="navbar" slim />
 			<v-spacer />
-			<v-toolbar-items>
+			<!-- <v-toolbar-items>
 				<v-btn
 					text
 					class="text-none hidden-sm-and-down"
@@ -42,7 +42,7 @@
 				>
 					<v-icon>mdi-github-circle</v-icon>&nbsp;GitHub</v-btn
 				>
-			</v-toolbar-items>
+			</v-toolbar-items> -->
 		</v-app-bar>
 
 		<v-content> <router-view /> </v-content>
